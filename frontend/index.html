@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <title>MIDDLE VAPESTORE</title>
     <style>
       .product::-webkit-scrollbar {
@@ -12,33 +13,40 @@
     </style>
   </head>
   <body>
+    <!--PROMOTION-->
     <nav class="w-full">
       <div class="bg-cyan-300 px-4 py-3 text-black">
         <p class="text-center text-sm font-medium">
           Diskon 10% Jika menggunakan kode "MIDDLESTORE"
         </p>
       </div>
+    <!--END PROMOTION-->
+
+    <!--NAVBAR-->
       <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <div class="text-center sm:text-left">
-            <h1 class="text-2xl font-bold text-cyan-600 sm:text-2xl">
-              MIDDLE VAPESTORE
-            </h1>
+          <div class="text-center sm:text-left items-center">
+            <img
+                src="../LOGO MIDDLEVAPESTORE.png"
+                alt=""
+                class="h-[110px] w-[180px] object-cover transition duration-500 group-hover:scale-105 mt-[-10px]"
+              />
 
-            <p class="mt-1.5 text-sm text-tosca-500">
-              Another Level of Vapestore 😘
+            <p class="mt-1.5 text-sm text-tosca-500 font-bold">
+              Another Level of Vapestore 
             </p>
           </div>
 
           <div
             class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center"
           >
-            <button
+            <a
+              href="Cara-Pesan.html"
               class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
               type="button"
             >
               <span class="text-sm font-medium"> Cara Pesan </span>
-            </button>
+        </a>
 
             <button
               class="block rounded-lg bg-cyan-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-cyan-300 focus:outline-none focus:ring"
@@ -50,27 +58,26 @@
         </div>
       </div>
     </nav>
-    <section class="bg-gray-50">
+    <!--END NAVBAR-->
+    <!-- <section class="bg-white">
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="mx-auto max-w-lg text-center">
           <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            "Hidup adalah pilihan, aku pilih vape."
           </h2>
 
           <p class="hidden text-gray-500 sm:mt-4 sm:block">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor
-            officia blanditiis repellat in, vero, aperiam porro ipsum laboriosam
-            consequuntur exercitationem incidunt tempora nisi?
+            "Temukan produk terbaik dengan koleksi kami dan dapatkan semua kebutuhan vaping Anda dengan mudah dan cepat!"
           </p>
         </div>
 
         <div class="mx-auto mt-8 max-w-xl">
           <form action="#" class="sm:flex sm:gap-4">
             <div class="sm:flex-1">
-              <label for="email" class="sr-only">Email</label>
+              
 
               <input
-                type="email"
+                type="text"
                 placeholder="masukan product yang anda cari"
                 class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-cyan-400"
               />
@@ -85,8 +92,92 @@
           </form>
         </div>
       </div>
-    </section>
-
+    </section>    -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out grid grid-rows-3" data-carousel-item>
+          <img src="../PODS/CALIBURN AZ3.jpeg" class="absolute block h-[350px] w-[250px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="relative bg-white pt-3">
+            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">CALIBURN AZ3</h3>
+            <p class="mt-2">
+              <span class="sr-only"> Regular Price </span>
+              <span class="tracking-wider text-gray-900"> Rp.240.000 </span>
+            </p>
+          </div>              
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../PODS/FOOM POD BLACK.webp" class="absolute block h-[350px] w-[250px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="relative bg-white pt-3">
+            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">CALIBURN AZ3</h3>
+            <p class="mt-2">
+              <span class="sr-only"> Regular Price </span>
+              <span class="tracking-wider text-gray-900"> Rp.240.000 </span>
+            </p>
+          </div>              
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../PODS/FOOM POD BUNDLING GOLD.webp" class="absolute block h-[350px] w-[250px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="relative bg-white pt-3">
+            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">CALIBURN AZ3</h3>
+            <p class="mt-2">
+              <span class="sr-only"> Regular Price </span>
+              <span class="tracking-wider text-gray-900"> Rp.240.000 </span>
+            </p>
+          </div>              
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../PODS/FOOM POD BUNDLING PINK.webp" class="absolute block h-[350px] w-[250px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="relative bg-white pt-3">
+            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">CALIBURN AZ3</h3>
+            <p class="mt-2">
+              <span class="sr-only"> Regular Price </span>
+              <span class="tracking-wider text-gray-900"> Rp.240.000 </span>
+            </p>
+          </div>              
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../PODS/FOOM POD PINK.webp" class="absolute block h-[350px] w-[250px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="relative bg-white pt-3">
+            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">CALIBURN AZ3</h3>
+            <p class="mt-2">
+              <span class="sr-only"> Regular Price </span>
+              <span class="tracking-wider text-gray-900"> Rp.240.000 </span>
+            </p>
+          </div>              
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+      </button>
+    </div>
     <!--Pod Collection-->
     <section>
       <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
@@ -95,13 +186,12 @@
             Pod Collection
           </h2>
         </header>
-
         <div class="mt-8">
           <p class="text-sm text-gray-500">Showing <span> 1 </span> of 15</p>
         </div>
         <ul class="flex mt-4 gap-4 overflow-x-auto product">
           <li class="flex-shrink-0" id="product">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk CALIBURN AZ3" class="group block">
               <img
                 src="../PODS/CALIBURN AZ3.jpeg"
                 alt=""
@@ -124,7 +214,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk FOOM POD BLACK" class="group block">
               <img
                 src="../PODS/FOOM POD BLACK.webp"
                 alt=""
@@ -147,7 +237,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk FOOM POD BUNDLING GOLD" class="group block">
               <img
                 src="../PODS/FOOM POD BUNDLING GOLD.webp"
                 alt=""
@@ -170,7 +260,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk FOOM POD BUNDLING PINK" class="group block">
               <img
                 src="../PODS/FOOM POD BUNDLING PINK.webp"
                 alt=""
@@ -193,7 +283,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk FOOM POD PINK" class="group block">
               <img
                 src="../PODS/FOOM POD PINK.webp"
                 alt=""
@@ -216,7 +306,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk FOOM POD PURPLE" class="group block">
               <img
                 src="../PODS/FOOM POD PURPLE.webp"
                 alt=""
@@ -239,7 +329,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk HANNYA AIRTOK KITSUNE" class="group block">
               <img
                 src="../PODS/HANNYA AIRTOK KITSUNE.jpg"
                 alt=""
@@ -262,7 +352,7 @@
             </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="group block overflow-hidden">
+            <a href="https://wa.me/6287825125172?text=saya mau beli produk MOTI POD" class="group block">
               <img
                 src="../PODS/MOTI POD.webp"
                 alt=""
@@ -287,9 +377,8 @@
         </ul>
         <ol class="mt-8 flex justify-center gap-1 text-xs font-medium">
           <li
-            class="size-8 rounded border border-gray-100 text-center leading-8 font-bold cursor-pointer"
-          >
-            <
+            class="size-8 rounded border border-gray-100 text-center leading-8 font-bold cursor-pointer">
+            
           </li>
           <li
             class="size-8 rounded border border-gray-100 text-center leading-8 bg-black text-white cursor-pointer"
@@ -565,11 +654,18 @@
     <footer class="bg-cyan-300">
       <div class="mx-auto max-w-screen-xl px-4 py-5 sm:px-6 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <div class="flex justify-center text-teal-600 sm:justify-start"></div>
+          <div class="flex justify-center text-black-100 sm:justify-start font-bold">
+            MIDDLE VAPESTORE
+          </div>
+          <p
+          class="mt-4 text-center text-sm text-black-100 lg:mt-0 lg:text-right">
+          Copyright &copy; 2024. All rights reserved.
+        </p>
         </div>
       </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </body>
 </html>
