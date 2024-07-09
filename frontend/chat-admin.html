@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cara Pesan di MIDDLE VAPESTORE</title>
+</head>
+<body>
+    <!--PROMOTION-->
+    <nav class="w-full">
+        <div class="bg-cyan-300 px-4 py-3 text-black">
+        <p class="text-center text-sm font-medium">
+            Diskon 10% Jika menggunakan kode "MIDDLESTORE"
+        </p>
+        </div>
+    <!--END PROMOTION-->
+
+    <!--NAVBAR-->
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="text-center sm:text-left items-center">
+                <a
+            href="index.html"
+            class="inline-flex items-center justify-center gap-1.5 rounded-lg py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring">
+            
+            <h1 class="text-2xl font-bold text-cyan-600 sm:text-2xl">
+                <img
+                src="../LOGO MIDDLEVAPESTORE.png"
+                alt=""
+                class="h-[110px] w-[180px] object-cover transition duration-500 group-hover:scale-105 mt-[-10px]"
+            />
+            </h1>
+                </a>
+
+            <p class="mt-1.5 text-sm text-tosca-500 font-bold">
+                Another Level of Vapestore 😘
+            </p>
+            </div>
+
+            <div
+            class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center"
+            >
+            <button
+                class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+                type="button"
+            >
+                <span class="text-sm font-medium"> Cara Pesan </span>
+            </button>
+
+            <button
+                class="block rounded-lg bg-cyan-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-cyan-300 focus:outline-none focus:ring"
+                type="button"
+            >
+                Chat Admin
+            </button>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--END NAVBAR-->
+
+    <!--FAQs-->
+    <div class="space-y-4 px-4">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" id="form-pertanyaan">
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="pertanyaan">
+                Masukkan pertanyaan
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pertanyaan" type="text" placeholder="pertanyaan">
+            </div>
+            <div class="mb-6">
+            <div class="flex items-center justify-between">
+            <button class="block rounded-lg bg-cyan-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-cyan-300 focus:outline-none focus:ring" type="submit">
+                Kirim pertanyaan via WhattsApp
+            </button>
+            </div>
+        </form>
+    </div>
+    <!--END FAQs-->
+</body>
+</html>
+
+<script>
+    document.getElementById('form-pertanyaan').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah form submit secara default
+        var pertanyaan = document.getElementById('pertanyaan').value;
+        var whatsappUrl = 'https://api.whatsapp.com/send/?phone=6287825125172&text=' + encodeURIComponent(pertanyaan) + '&type=phone_number&app_absent=0';
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
