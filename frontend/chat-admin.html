@@ -43,7 +43,7 @@
             >
             <button
                 class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
-                type="button"
+                type="button" id="cara-pesan"
             >
                 <span class="text-sm font-medium"> Cara Pesan </span>
             </button>
@@ -88,4 +88,8 @@
         var whatsappUrl = 'https://api.whatsapp.com/send/?phone=6287825125172&text=' + encodeURIComponent(pertanyaan) + '&type=phone_number&app_absent=0';
         window.open(whatsappUrl, '_blank');
     });
+
+    document.getElementById('cara-pesan').addEventListener('click', function(event) {
+        window.location.href('Cara-pesan.html')
+    })
 </script>
