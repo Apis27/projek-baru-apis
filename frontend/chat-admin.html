@@ -21,7 +21,7 @@
         <div class="sm:flex sm:items-center sm:justify-between">
             <div class="text-center sm:text-left items-center">
                 <a
-            href="index.html"
+            href="../index.html"
             class="inline-flex items-center justify-center gap-1.5 rounded-lg py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring">
             
             <h1 class="text-2xl font-bold text-cyan-600 sm:text-2xl">
@@ -41,19 +41,19 @@
             <div
             class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center"
             >
-            <button
-                class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
-                type="button"
+            <a
+              href="Cara-Pesan.html"
+              class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+              type="button"
             >
-                <span class="text-sm font-medium"> Cara Pesan </span>
-            </button>
+              <span class="text-sm font-medium"> Cara Pesan </span>
+        </a>
 
-            <button
-                class="block rounded-lg bg-cyan-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-cyan-300 focus:outline-none focus:ring"
-                type="button"
+            <a href="chat-admin.html"
+              class="block rounded-lg bg-cyan-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-cyan-300 focus:outline-none focus:ring"
             >
-                Chat Admin
-            </button>
+              Chat Admin
+            </a>
             </div>
         </div>
         </div>
@@ -87,5 +87,9 @@
         var pertanyaan = document.getElementById('pertanyaan').value;
         var whatsappUrl = 'https://api.whatsapp.com/send/?phone=6287825125172&text=' + encodeURIComponent(pertanyaan) + '&type=phone_number&app_absent=0';
         window.open(whatsappUrl, '_blank');
+    });
+
+    document.getElementById('cara-pesan').addEventListener('click', function(event) {
+        window.location.href = 'Cara-pesan.html';
     });
 </script>
