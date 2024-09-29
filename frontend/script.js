@@ -40,5 +40,6 @@ pageSlider.forEach((page, i) => {
     } else if (index === 3) {
       LiquitProduct.style.marginLeft = "-150%";
     }
+    
   });
 });
